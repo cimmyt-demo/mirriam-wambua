@@ -57,7 +57,18 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero.png" alt="" data-aos="fade-in">
+      <!-- <img src="assets/img/hero.png" alt="" data-aos="fade-in"> -->
+
+      <picture>
+        <!-- Image for small screens (mobile) -->
+        <source srcset="assets/img/miri.jpeg" media="(max-width: 600px)">
+        
+        <!-- Image for medium screens (tablet) -->
+        <source srcset="assets/img/hero.png" media="(max-width: 1024px)">
+        
+        <!-- Default image for larger screens (desktop) -->
+        <img src="assets/img/hero.png" alt="" data-aos="fade-in">
+      </picture>
 
       <div class="container" data-aos="zoom-out" data-aos-delay="100">
         <h2>Mirriam Wambua</h2>
